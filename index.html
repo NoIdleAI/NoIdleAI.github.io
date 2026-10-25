@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoIdle · Keep Building 持续构建 — AI 生产力工具工程品牌</title>
+  <meta name="description" content="NoIdle 是围绕 AI 生产力工具持续构建的工程品牌:多机 AI 工作台 Orbit、编程 Agent CLI NoIdle Code、企业脚手架与工程技能库。产品独立版本管理、互相配套、风格统一。">
+  <meta property="og:title" content="NoIdle · Keep Building 持续构建">
+  <meta property="og:description" content="围绕 AI 生产力工具持续构建的工程品牌 — 多机 AI 工作台 / 编程 Agent CLI / 工程基建">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top" aria-label="NoIdle 首页">
+        <svg class="nav-logo" viewBox="0 0 512 512" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="nav-g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#FF9A3D"/><stop offset="1" stop-color="#F43F5E"/>
+            </linearGradient>
+          </defs>
+          <rect width="512" height="512" rx="115" fill="url(#nav-g)"/>
+          <path fill="none" stroke="#fff" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"
+                d="M166 362 L166 150 L346 362 L346 150" transform="translate(256 256) scale(1.12) translate(-256 -256)"/>
+        </svg>
+        <span class="nav-word">NoIdle</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#products">产品矩阵</a>
+        <a href="#philosophy">理念</a>
+        <a href="#brand">品牌</a>
+        <a href="https://github.com/NoIdleAI" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="hero-eyebrow">AI 生产力工具 · 工程品牌</p>
+          <h1 class="hero-title">永不停滞,<br><span class="grad-text">持续构建</span>。</h1>
+          <p class="hero-sub">
+            NoIdle 围绕 AI 生产力工具持续构建:从多机 AI 工作台 <strong>Orbit</strong>,
+            到编程 Agent CLI <strong>NoIdle Code</strong>,再到企业级脚手架与工程技能库。
+            每个产品独立版本管理、互相配套、风格统一。
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#products">浏览产品矩阵</a>
+            <a class="btn btn-ghost" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">开源项目 noidle-resume</a>
+          </div>
+          <ul class="hero-badges" aria-label="产品线关键词">
+            <li>多机 AI 工作台</li>
+            <li>编程 Agent CLI</li>
+            <li>企业工程基建</li>
+            <li>本地优先</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="hero-logo-glow"></div>
+          <img class="hero-logo" src="assets/img/noidle-tile-sunset.png" alt="" width="420" height="420">
+          <div class="hero-chip chip-a"><span class="dot"></span>Orbit · 会话编排</div>
+          <div class="hero-chip chip-b"><span class="dot dot-violet"></span>NoIdle Code · Agent CLI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产品矩阵 -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Product Matrix</p>
+          <h2 class="section-title">产品矩阵</h2>
+          <p class="section-desc">一套持续演进的 AI 工作台与工程基建矩阵 —— 独立版本管理,矩阵内互相配套、风格统一。</p>
+        </div>
+
+        <div class="grid">
+          <article class="card card-wide reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-avatar-violet.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">Orbit <span class="card-cn">多机 AI 工作台</span></h3>
+                <p class="card-tag">旗舰产品 · 研发中</p>
+              </div>
+              <span class="card-lock" title="私有仓库">私有 · 未开源</span>
+            </div>
+            <p class="card-desc">
+              由三件套组成完整的多机 AI 工作台:<strong>orbit-be</strong> 会话编排 / 审批流 / 多端网关,
+              <strong>orbit-fe</strong> 桌面 + 移动双端,<strong>orbit-agent</strong> 工作机代理负责会话执行 / 文件 / PTY。
+              浏览器在手,算力在多台工作机,审批与编排尽在一处。
+            </p>
+            <div class="chips">
+              <span class="chip">Java 8 · Spring Boot</span>
+              <span class="chip">Vue 3 · Vite 6</span>
+              <span class="chip">Node 20 · TypeScript</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-avatar-orange.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">NoIdle Code</h3>
+                <p class="card-tag">编程 Agent CLI · 研发中</p>
+              </div>
+              <span class="card-lock" title="私有仓库">私有 · 未开源</span>
+            </div>
+            <p class="card-desc">
+              编程 Agent 命令行工具,本地小模型也能真写代码。既可独立使用,也作为 Orbit 的 AI 引擎之一接入。
+            </p>
+            <div class="chips">
+              <span class="chip">Node 22</span>
+              <span class="chip">零依赖</span>
+              <span class="chip">CLI</span>
+            </div>
+          </article>
+
+          <article class="card card-open reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-avatar-paris.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">noidle-resume</h3>
+                <p class="card-tag">开源 · Apache-2.0</p>
+              </div>
+              <span class="card-badge-open">开源</span>
+            </div>
+            <p class="card-desc">
+              GLM Coding Plan 限额到点后,自动续跑 VS Code 侧边栏 Claude Code 会话的本地工具:
+              本地值守、转写事实源、自动重发,零真额度测试。
+            </p>
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">Vue 3</span>
+              <span class="chip">Tauri 2</span>
+              <span class="chip">SQLite</span>
+            </div>
+            <a class="card-link" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">
+              前往 GitHub 仓库 <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-tile-black.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">企业脚手架</h3>
+                <p class="card-tag">noidle-be / noidle-fe · 研发中</p>
+              </div>
+              <span class="card-lock" title="私有仓库">私有 · 未开源</span>
+            </div>
+            <p class="card-desc">
+              后端脚手架内置认证鉴权与动态数据源,前端脚手架提供权限体系与双布局,开箱即用的企业级起点。
+            </p>
+            <div class="chips">
+              <span class="chip">Java 8 · Spring Boot</span>
+              <span class="chip">Vue 3 · TypeScript</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-tile-sunset.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">工程技能库</h3>
+                <p class="card-tag">noidle-skills · 研发中</p>
+              </div>
+              <span class="card-lock" title="私有仓库">私有 · 未开源</span>
+            </div>
+            <p class="card-desc">
+              官方技能集合:原型设计 / UI 测试 / 环境工具,零构建,随取随用。
+            </p>
+            <div class="chips">
+              <span class="chip">Node</span>
+              <span class="chip">零构建</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <img class="card-icon" src="assets/img/noidle-avatar-violet.png" alt="" width="56" height="56">
+              <div>
+                <h3 class="card-name">NoIdle TV</h3>
+                <p class="card-tag">Android TV 桌面 · 研发中</p>
+              </div>
+              <span class="card-lock" title="私有仓库">私有 · 未开源</span>
+            </div>
+            <p class="card-desc">
+              Android TV 桌面启动器:无广告、高适配,把电视遥控器还给内容本身。
+            </p>
+            <div class="chips">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Android</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 理念 -->
+    <section class="section section-alt" id="philosophy">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Keep Building</p>
+          <h2 class="section-title">NoIdle,是一种态度</h2>
+          <p class="section-desc">名字即是承诺:不停滞、不空转,把每一个想法持续构建成可用的小工具。</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="value reveal">
+            <span class="value-num">01</span>
+            <h3>独立演进</h3>
+            <p>每个产品独立仓库、独立版本管理,按自己的节奏迭代,不互相拖累。</p>
+          </div>
+          <div class="value reveal">
+            <span class="value-num">02</span>
+            <h3>配套互补</h3>
+            <p>矩阵内产品互相配套:工作台、CLI、脚手架、技能库,拼成完整的工程图景。</p>
+          </div>
+          <div class="value reveal">
+            <span class="value-num">03</span>
+            <h3>风格统一</h3>
+            <p>从品牌标识到交互语言保持一致,认得出、记得住、用得顺。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 品牌 -->
+    <section class="section" id="brand">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-eyebrow">Brand</p>
+          <h2 class="section-title">品牌标识</h2>
+          <p class="section-desc">圆头单笔画「N」标志,招牌日出渐变,克制的深色界面语言。</p>
+        </div>
+
+        <div class="brand-grid">
+          <figure class="brand-card brand-tile reveal">
+            <img src="assets/img/noidle-tile-sunset.png" alt="NoIdle 主标志 · 日出渐变">
+            <figcaption>主标志 · 日出渐变</figcaption>
+          </figure>
+          <figure class="brand-card brand-tile reveal">
+            <img src="assets/img/noidle-avatar-violet.png" alt="NoIdle 徽标 · 星紫渐变">
+            <figcaption>圆形徽标 · 星紫渐变</figcaption>
+          </figure>
+          <figure class="brand-card brand-tile reveal">
+            <img src="assets/img/noidle-avatar-paris.png" alt="NoIdle 徽标 · 巴黎紫渐变">
+            <figcaption>圆形徽标 · 巴黎紫渐变</figcaption>
+          </figure>
+          <figure class="brand-card brand-tile brand-light reveal">
+            <img src="assets/img/noidle-tile-black.png" alt="NoIdle 应用图标 · 黑">
+            <figcaption>应用图标 · 黑</figcaption>
+          </figure>
+          <figure class="brand-card brand-wordmark reveal">
+            <img src="assets/img/orbit-wordmark.png" alt="NoIdle Orbit 品牌字标">
+            <figcaption>Orbit 产品线字标</figcaption>
+          </figure>
+        </div>
+
+        <div class="swatches reveal" aria-label="品牌色彩">
+          <div class="swatch">
+            <span class="swatch-color" style="background:linear-gradient(135deg,#FF9A3D,#F43F5E)"></span>
+            <span class="swatch-name">日出渐变</span>
+            <span class="swatch-hex">#FF9A3D → #F43F5E</span>
+          </div>
+          <div class="swatch">
+            <span class="swatch-color" style="background:linear-gradient(135deg,#A855F7,#4F46E5)"></span>
+            <span class="swatch-name">星紫渐变</span>
+            <span class="swatch-hex">#A855F7 → #4F46E5</span>
+          </div>
+          <div class="swatch">
+            <span class="swatch-color" style="background:linear-gradient(135deg,#46207E,#8F76C6)"></span>
+            <span class="swatch-name">巴黎紫渐变</span>
+            <span class="swatch-hex">#46207E → #8F76C6</span>
+          </div>
+          <div class="swatch">
+            <span class="swatch-color" style="background:#F97316"></span>
+            <span class="swatch-name">活力橙</span>
+            <span class="swatch-hex">#F97316</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-logo" viewBox="0 0 512 512" role="img" aria-hidden="true">
+          <rect width="512" height="512" rx="115" fill="#1c1c26"/>
+          <path fill="none" stroke="#FF9A3D" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"
+                d="M166 362 L166 150 L346 362 L346 150" transform="translate(256 256) scale(1.12) translate(-256 -256)"/>
+        </svg>
+        <span>NoIdle · Keep Building 持续构建</span>
+      </div>
+      <nav class="footer-links" aria-label="页脚">
+        <a href="#products">产品矩阵</a>
+        <a href="#philosophy">理念</a>
+        <a href="#brand">品牌</a>
+        <a href="https://github.com/NoIdleAI" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <p class="footer-meta">© 2026 NoIdle · Apache-2.0 · 本站由 GitHub Pages 托管</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
