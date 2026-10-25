@@ -88,13 +88,9 @@ a { color: inherit; text-decoration: none; }
 
 .hero-inner {
   position: relative;
-  max-width: var(--maxw);
+  max-width: 860px;
   margin: 0 auto;
   padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 48px;
-  align-items: center;
 }
 
 .hero-chip {
@@ -108,16 +104,16 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--hairline);
   border-radius: 999px;
   padding: 6px 16px;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text); opacity: 0.85; }
 
 .hero-title {
-  font-size: clamp(42px, 6.4vw, 74px);
+  font-size: clamp(50px, 8.5vw, 104px);
   font-weight: 700;
-  line-height: 1.12;
-  letter-spacing: -0.018em;
-  margin-bottom: 24px;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
   color: var(--text);
 }
 
@@ -144,57 +140,14 @@ a { color: inherit; text-decoration: none; }
 .link-plain { font-size: 15px; font-weight: 600; color: var(--text); opacity: 0.85; display: inline-flex; align-items: center; gap: 7px; }
 .link-plain:hover { opacity: 1; }
 
-/* 轨道环:黑白,唯一彩色是核心 logo */
-.hero-orbit {
-  position: relative;
-  width: min(420px, 100%);
-  aspect-ratio: 1;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.orbit-core {
-  width: 34%;
-  border-radius: 23%;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 120px rgba(244, 63, 94, 0.14);
-}
-.orbit-ring {
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+/* 产品专属色点列 */
+.hero-dots { display: flex; gap: 12px; margin-top: 64px; }
+.hero-dots span {
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
+  opacity: 0.95;
 }
-.ring-outer { inset: 6%; animation: spin 44s linear infinite; }
-.ring-inner { inset: 22%; animation: spin 30s linear infinite reverse; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-.sat {
-  position: absolute;
-  top: -5px; left: 50%;
-  margin-left: -5px;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.9;
-}
-
-.ring-label {
-  position: absolute;
-  left: 50%;
-  font-family: ui-monospace, "SF Mono", Menlo, monospace;
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  color: var(--text-faint);
-  background: var(--bg);
-  padding: 0 10px;
-  white-space: nowrap;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-.label-outer { top: 6%; }
-.label-inner { top: 22%; }
 
 /* ============ 跑马灯 ============ */
 .ticker {
@@ -273,6 +226,17 @@ a { color: inherit; text-decoration: none; }
 .tile-orbit .tile-icon { width: 44px; height: 44px; border-radius: 11px; }
 .tile-name { font-size: 19px; font-weight: 700; line-height: 1.25; }
 .tile-line { font-size: 12.5px; color: var(--text-faint); }
+.tile[style*="--pc"] .tile-line::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--pc);
+  margin-right: 7px;
+  vertical-align: 1px;
+}
+.tile[style*="--pc"]:hover { border-color: color-mix(in srgb, var(--pc) 55%, transparent); }
 
 .tile-lock, .tile-badge-open {
   margin-left: auto;
@@ -367,6 +331,9 @@ a { color: inherit; text-decoration: none; }
 .brand-wordmark img { width: auto; height: 56px; border-radius: 0; }
 
 .swatch-sheet { border: 1px solid #e4e4e4; border-radius: 18px; overflow: hidden; background: #fff; }
+.sheet-title { font-size: 13px; font-weight: 600; color: var(--light-muted); margin: 30px 0 14px; letter-spacing: 0.04em; }
+.sheet-row.sm .sheet-bar { height: 28px; }
+.sheet-row.sm { padding: 12px 22px; }
 .sheet-row {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -403,20 +370,19 @@ a { color: inherit; text-decoration: none; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .ticker-track, .orbit-ring { animation: none; }
+  .ticker-track { animation: none; }
   .tile:hover, .brand-card:hover, .btn-solid:hover { transform: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
 /* ============ 响应式 ============ */
 @media (max-width: 960px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 56px; }
-  .hero-orbit { order: -1; width: min(330px, 82%); }
   .philo { grid-template-columns: 1fr; gap: 40px; }
   .bento .tile, .tile-orbit, .tile-wide { grid-column: span 6; }
   .brand-grid { grid-template-columns: repeat(2, 1fr); }
   .brand-wordmark { grid-column: span 2; }
   .hero-watermark { opacity: 0.6; }
+  .hero-dots { margin-top: 48px; }
 }
 
 @media (max-width: 560px) {
