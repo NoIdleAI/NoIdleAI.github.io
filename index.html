@@ -17,13 +17,8 @@
     <div class="nav-inner">
       <a class="nav-logo" href="#top" aria-label="NoIdle 首页">
         <svg viewBox="0 0 512 512" role="img" aria-hidden="true">
-          <defs>
-            <linearGradient id="nav-g" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#FF9A3D"/><stop offset="1" stop-color="#F43F5E"/>
-            </linearGradient>
-          </defs>
-          <rect width="512" height="512" rx="115" fill="url(#nav-g)"/>
-          <path fill="none" stroke="#fff" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"
+          <rect width="512" height="512" rx="115" fill="#fff"/>
+          <path fill="none" stroke="#000" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"
                 d="M166 362 L166 150 L346 362 L346 150" transform="translate(256 256) scale(1.12) translate(-256 -256)"/>
         </svg>
         <span>NoIdle</span>
@@ -32,127 +27,226 @@
         <a href="#products">产品</a>
         <a href="#philosophy">理念</a>
         <a href="#brand">品牌</a>
-        <a href="https://github.com/NoIdleAI" target="_blank" rel="noopener">开源</a>
+        <a class="nav-pill" href="https://github.com/NoIdleAI" target="_blank" rel="noopener">开源</a>
       </div>
     </div>
   </nav>
 
   <main id="top">
 
-    <!-- Hero -->
+    <!-- Hero:非对称 + 轨道环 -->
     <section class="hero">
-      <h1 class="hero-title reveal">永不停滞，<br><span class="grad-text">持续构建。</span></h1>
-      <p class="hero-sub reveal">
-        多机 AI 工作台 Orbit、编程 Agent CLI NoIdle Code、企业脚手架与工程技能库。<br>
-        独立演进，配套互补，风格统一。
-      </p>
-      <div class="hero-links reveal">
-        <a class="btn-pill" href="#products">进一步了解</a>
-        <a class="link-chevron" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">noidle-resume ›</a>
-      </div>
-      <div class="hero-art reveal" aria-hidden="true">
-        <div class="hero-glow"></div>
-        <img class="hero-logo" src="assets/img/noidle-tile-sunset.png" alt="" width="300" height="300">
+      <div class="hero-watermark" aria-hidden="true">N</div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-chip reveal"><span class="dot"></span>Keep Building · 持续构建</p>
+          <h1 class="hero-title reveal">永不停滞，<br>持续构建。</h1>
+          <p class="hero-sub reveal">
+            NoIdle 是围绕 AI 生产力工具的工程品牌:多机 AI 工作台 Orbit、编程 Agent CLI NoIdle Code、
+            企业脚手架与工程技能库 —— 独立演进，配套互补。
+          </p>
+          <div class="hero-links reveal">
+            <a class="btn-solid" href="#products">浏览产品矩阵 <span class="arr">→</span></a>
+            <a class="link-plain" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">noidle-resume <span class="arr">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-orbit reveal" aria-hidden="true">
+          <div class="orbit-ring ring-outer"><span class="sat"></span></div>
+          <span class="ring-label label-outer">ORBIT · 工作台</span>
+          <div class="orbit-ring ring-inner"><span class="sat"></span></div>
+          <span class="ring-label label-inner">CODE · CLI</span>
+          <img class="orbit-core" src="assets/img/noidle-tile-sunset.png" alt="" width="200" height="200">
+        </div>
       </div>
     </section>
 
-    <!-- 产品 -->
+    <!-- 跑马灯 -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>KEEP BUILDING</span><span class="tick-sep">·</span><span>持续构建</span><span class="tick-sep">·</span>
+        <span>KEEP BUILDING</span><span class="tick-sep">·</span><span>持续构建</span><span class="tick-sep">·</span>
+        <span>KEEP BUILDING</span><span class="tick-sep">·</span><span>持续构建</span><span class="tick-sep">·</span>
+        <span>KEEP BUILDING</span><span class="tick-sep">·</span><span>持续构建</span><span class="tick-sep">·</span>
+      </div>
+    </div>
+
+    <!-- 产品矩阵:便当格 -->
     <section class="section" id="products">
       <div class="container">
-        <h2 class="section-title reveal">产品矩阵。<br><span class="title-sub">一套持续演进的工程基建。</span></h2>
-
-        <article class="tile tile-feature reveal">
-          <img class="tile-icon" src="assets/img/noidle-avatar-violet.png" alt="" width="72" height="72">
-          <h3 class="tile-name">Orbit <span class="tile-cn">多机 AI 工作台</span></h3>
-          <p class="tile-tagline">浏览器在手，算力在多台工作机。</p>
-          <div class="orbit-diagram" aria-hidden="true">
-            <svg viewBox="0 0 360 170">
-              <circle cx="180" cy="85" r="62" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
-              <line x1="180" y1="85" x2="102" y2="47" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-              <line x1="180" y1="85" x2="258" y2="47" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-              <line x1="180" y1="85" x2="180" y2="147" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-              <circle cx="102" cy="47" r="11" fill="#1d1d1f" stroke="rgba(168,85,247,0.7)" stroke-width="1.5"/>
-              <circle cx="258" cy="47" r="11" fill="#1d1d1f" stroke="rgba(255,154,61,0.7)" stroke-width="1.5"/>
-              <circle cx="180" cy="147" r="11" fill="#1d1d1f" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
-              <rect x="164" y="69" width="32" height="32" rx="9" fill="#F97316"/>
-              <path d="M172 93 L172 77 L188 93 L188 77" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <text x="102" y="26" text-anchor="middle" class="dg-label">orbit-be</text>
-              <text x="258" y="26" text-anchor="middle" class="dg-label">orbit-fe</text>
-              <text x="180" y="166" text-anchor="middle" class="dg-label">orbit-agent</text>
-            </svg>
-          </div>
-          <p class="tile-desc">
-            orbit-be 会话编排 / 审批流 / 多端网关,orbit-fe 桌面 + 移动双端,orbit-agent 工作机代理。
-          </p>
-          <p class="tile-meta">Java 8 · Spring Boot &nbsp;/&nbsp; Vue 3 · Vite 6 &nbsp;/&nbsp; Node 20 · TypeScript</p>
-        </article>
-
-        <div class="grid">
-          <article class="tile reveal">
-            <img class="tile-icon" src="assets/img/noidle-avatar-orange.png" alt="" width="56" height="56">
-            <h3 class="tile-name">NoIdle Code</h3>
-            <p class="tile-tagline">本地小模型，也能真写代码。</p>
-            <p class="tile-desc">编程 Agent CLI。独立可用，也作为 Orbit 的 AI 引擎之一接入。</p>
-            <p class="tile-meta">Node 22 · 零依赖</p>
-            <p class="tile-status">私有 · 研发中</p>
-          </article>
-
-          <article class="tile reveal">
-            <img class="tile-icon" src="assets/img/noidle-avatar-paris.png" alt="" width="56" height="56">
-            <h3 class="tile-name">noidle-resume</h3>
-            <p class="tile-tagline">限额到点，自动续跑。</p>
-            <p class="tile-desc">GLM Coding Plan 限额到点后，自动续跑 VS Code Claude Code 会话的本地值守工具。</p>
-            <p class="tile-meta">TypeScript · Vue 3 · Tauri 2</p>
-            <p class="tile-status status-open"><a class="link-chevron" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">开源 · 前往 GitHub ›</a></p>
-          </article>
-
-          <article class="tile reveal">
-            <img class="tile-icon" src="assets/img/noidle-tile-black.png" alt="" width="56" height="56">
-            <h3 class="tile-name">企业脚手架</h3>
-            <p class="tile-tagline">开箱即用的企业级起点。</p>
-            <p class="tile-desc">noidle-be 认证鉴权 / 动态数据源,noidle-fe 权限体系 / 双布局。</p>
-            <p class="tile-meta">Java 8 · Spring Boot / Vue 3 · TypeScript</p>
-            <p class="tile-status">私有 · 研发中</p>
-          </article>
-
-          <article class="tile reveal">
-            <img class="tile-icon" src="assets/img/noidle-tile-sunset.png" alt="" width="56" height="56">
-            <h3 class="tile-name">工程技能库</h3>
-            <p class="tile-tagline">原型设计 / UI 测试 / 环境工具。</p>
-            <p class="tile-desc">noidle-skills 官方技能集合，零构建，随取随用。</p>
-            <p class="tile-meta">Node · 零构建</p>
-            <p class="tile-status">私有 · 研发中</p>
-          </article>
+        <div class="section-head reveal">
+          <p class="section-kicker">Product Matrix</p>
+          <h2 class="section-title">产品矩阵<span class="title-end">。</span></h2>
+          <p class="section-desc">一套持续演进的 AI 工作台与工程基建 —— 独立版本管理，矩阵内互相配套、风格统一。</p>
         </div>
 
-        <article class="tile tile-strip reveal">
-          <img class="tile-icon" src="assets/img/noidle-avatar-violet.png" alt="" width="56" height="56">
-          <div class="strip-copy">
-            <h3 class="tile-name">NoIdle TV</h3>
-            <p class="tile-tagline">把遥控器还给内容本身 —— 无广告、高适配的 Android TV 桌面。</p>
-          </div>
-          <p class="tile-meta">Kotlin · Android</p>
-          <p class="tile-status">私有 · 研发中</p>
-        </article>
+        <div class="bento">
+          <article class="tile tile-orbit reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="44" height="44">
+              <div>
+                <h3 class="tile-name">Orbit</h3>
+                <p class="tile-line">多机 AI 工作台 · 旗舰产品</p>
+              </div>
+              <span class="tile-lock">私有 · 未开源</span>
+            </div>
+            <p class="tile-tagline">浏览器在手，算力在多台工作机。</p>
+            <div class="orbit-diagram" aria-hidden="true">
+              <svg viewBox="0 0 360 190">
+                <circle cx="180" cy="95" r="70" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <line x1="180" y1="95" x2="102" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <line x1="180" y1="95" x2="258" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <line x1="180" y1="95" x2="180" y2="165" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+                <circle cx="102" cy="55" r="12" fill="#111" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                <circle cx="258" cy="55" r="12" fill="#111" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                <circle cx="180" cy="165" r="12" fill="#111" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                <rect x="166" y="81" width="28" height="28" rx="8" fill="#fff"/>
+                <path d="M173 102 L173 88 L187 102 L187 88" fill="none" stroke="#000" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="102" y="32" text-anchor="middle" class="dg-label">orbit-be</text>
+                <text x="258" y="32" text-anchor="middle" class="dg-label">orbit-fe</text>
+                <text x="180" y="188" text-anchor="middle" class="dg-label">orbit-agent</text>
+              </svg>
+            </div>
+            <p class="tile-desc">
+              三件套组成完整工作台:orbit-be 会话编排 / 审批流 / 多端网关，orbit-fe 桌面 + 移动双端，
+              orbit-agent 工作机代理负责会话执行 / 文件 / PTY。
+            </p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">Java 8 · Spring Boot</span>
+                <span class="chip">Vue 3 · Vite 6</span>
+                <span class="chip">Node 20 · TypeScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="40" height="40">
+              <div>
+                <h3 class="tile-name">NoIdle Code</h3>
+                <p class="tile-line">编程 Agent CLI</p>
+              </div>
+            </div>
+            <p class="tile-tagline">本地小模型，也能真写代码。</p>
+            <p class="tile-desc">独立可用，也作为 Orbit 的 AI 引擎之一接入。</p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">Node 22</span>
+                <span class="chip">零依赖</span>
+              </div>
+              <span class="tile-lock">私有</span>
+            </div>
+          </article>
+
+          <article class="tile tile-open reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="40" height="40">
+              <div>
+                <h3 class="tile-name">noidle-resume</h3>
+                <p class="tile-line">本地值守工具</p>
+              </div>
+              <span class="tile-badge-open">开源</span>
+            </div>
+            <p class="tile-tagline">限额到点，自动续跑。</p>
+            <p class="tile-desc">GLM Coding Plan 限额到点后，自动续跑 VS Code Claude Code 会话。</p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">TypeScript</span>
+                <span class="chip">Tauri 2</span>
+              </div>
+              <a class="link-plain" href="https://github.com/NoIdleAI/noidle-resume" target="_blank" rel="noopener">GitHub <span class="arr">→</span></a>
+            </div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="40" height="40">
+              <div>
+                <h3 class="tile-name">企业脚手架</h3>
+                <p class="tile-line">noidle-be / noidle-fe</p>
+              </div>
+            </div>
+            <p class="tile-tagline">开箱即用的企业级起点。</p>
+            <p class="tile-desc">后端内置认证鉴权与动态数据源，前端提供权限体系与双布局。</p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">Java</span>
+                <span class="chip">Vue 3</span>
+              </div>
+              <span class="tile-lock">私有</span>
+            </div>
+          </article>
+
+          <article class="tile reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="40" height="40">
+              <div>
+                <h3 class="tile-name">工程技能库</h3>
+                <p class="tile-line">noidle-skills</p>
+              </div>
+            </div>
+            <p class="tile-tagline">原型设计 / UI 测试 / 环境工具。</p>
+            <p class="tile-desc">官方技能集合，零构建，随取随用。</p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">Node</span>
+                <span class="chip">零构建</span>
+              </div>
+              <span class="tile-lock">私有</span>
+            </div>
+          </article>
+
+          <article class="tile tile-wide reveal">
+            <div class="tile-head">
+              <img class="tile-icon" src="assets/img/noidle-logo-white.svg" alt="" width="40" height="40">
+              <div>
+                <h3 class="tile-name">NoIdle TV</h3>
+                <p class="tile-line">Android TV 桌面</p>
+              </div>
+              <span class="tile-lock">私有 · 未开源</span>
+            </div>
+            <p class="tile-tagline">把遥控器还给内容本身 —— 无广告、高适配的电视桌面。</p>
+            <div class="tile-foot">
+              <div class="chips">
+                <span class="chip">Kotlin</span>
+                <span class="chip">Android</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- 理念 -->
-    <section class="section" id="philosophy">
-      <div class="container">
-        <h2 class="section-title reveal">不停滞，<br><span class="grad-text">不空转。</span></h2>
-        <div class="values">
-          <div class="value reveal">
-            <h3>独立演进</h3>
-            <p>每个产品独立仓库、独立版本管理，按自己的节奏迭代，不互相拖累。</p>
+    <section class="section section-ink" id="philosophy">
+      <div class="container philo">
+        <div class="philo-left reveal">
+          <p class="section-kicker">Philosophy</p>
+          <h2 class="philo-title">不停滞，<br>不空转。</h2>
+          <p class="philo-note">名字即是承诺:把每一个想法，持续构建成可用的小工具。</p>
+        </div>
+        <div class="philo-right">
+          <div class="principle reveal">
+            <span class="p-num">01</span>
+            <div>
+              <h3>独立演进</h3>
+              <p>每个产品独立仓库、独立版本管理，按自己的节奏迭代，不互相拖累。</p>
+            </div>
           </div>
-          <div class="value reveal">
-            <h3>配套互补</h3>
-            <p>工作台、CLI、脚手架、技能库，矩阵内互相配套，拼成完整图景。</p>
+          <div class="principle reveal">
+            <span class="p-num">02</span>
+            <div>
+              <h3>配套互补</h3>
+              <p>工作台、CLI、脚手架、技能库，矩阵内互相配套，拼成完整图景。</p>
+            </div>
           </div>
-          <div class="value reveal">
-            <h3>风格统一</h3>
-            <p>从品牌标识到交互语言保持一致，认得出、记得住、用得顺。</p>
+          <div class="principle reveal">
+            <span class="p-num">03</span>
+            <div>
+              <h3>风格统一</h3>
+              <p>从品牌标识到交互语言保持一致，认得出、记得住、用得顺。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -161,7 +255,11 @@
     <!-- 品牌 -->
     <section class="section section-light" id="brand">
       <div class="container">
-        <h2 class="section-title reveal">品牌标识。<br><span class="title-sub">圆头单笔画 N，招牌日出渐变。</span></h2>
+        <div class="section-head reveal">
+          <p class="section-kicker">Brand</p>
+          <h2 class="section-title">品牌资产<span class="title-end">。</span></h2>
+          <p class="section-desc">圆头单笔画「N」标志，招牌日出渐变，克制的黑白界面语言。</p>
+        </div>
 
         <div class="brand-grid">
           <figure class="brand-card reveal">
@@ -218,15 +316,19 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-word">NoIdle</span>
+        <span class="footer-tag">Keep Building · 持续构建</span>
+      </div>
       <nav class="footer-links" aria-label="页脚">
         <a href="#products">产品矩阵</a>
         <a href="#philosophy">理念</a>
         <a href="#brand">品牌</a>
         <a href="https://github.com/NoIdleAI" target="_blank" rel="noopener">GitHub</a>
       </nav>
-      <p class="footer-meta">NoIdle · Keep Building 持续构建<br>© 2026 NoIdle · Apache-2.0 · 本站由 GitHub Pages 托管</p>
     </div>
+    <div class="container footer-meta">© 2026 NoIdle · Apache-2.0 · 本站由 GitHub Pages 托管</div>
   </footer>
 
   <script src="assets/js/main.js" defer></script>
