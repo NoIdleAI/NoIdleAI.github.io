@@ -425,10 +425,10 @@ a { color: inherit; text-decoration: none; }
 
 /* ============ 移动端 Orbit 卡:上下排版 ============ */
 @media (max-width: 960px) {
-  .tile-orbit { display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .orbit-media { flex: 0 0 auto; flex-direction: column; align-items: center; gap: 22px; }
-  .orbit-media .orbit-diagram { width: min(300px, 86%); }
+  .tile-orbit { display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+  .orbit-media { flex: 0 0 auto; flex-direction: column; align-items: flex-start; gap: 22px; }
+  .orbit-media .orbit-diagram { width: min(300px, 86%); margin: 0 auto; }
   .orbit-media .orbit-diagram svg { max-width: 100%; }
-  .orbit-media .tile-desc { width: 100%; text-align: center; }
+  .orbit-media .tile-desc { width: 100%; text-align: left; }
   .tile-orbit .tile-foot { width: 100%; }
 }
