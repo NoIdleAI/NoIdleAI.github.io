@@ -348,13 +348,13 @@ a { color: inherit; text-decoration: none; }
 .sheet-group:first-child { border-top: none; }
 .sheet-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 240px 1fr auto;
   align-items: center;
   gap: 24px;
   padding: 14px 22px;
   border-top: 1px solid #ebebeb;
 }
-.sheet-bar { height: 34px; border-radius: 9px; }
+.sheet-bar { width: 240px; height: 34px; border-radius: 9px; }
 .sheet-name { font-size: 14.5px; font-weight: 600; }
 .sheet-hex { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12.5px; color: var(--light-muted); }
 
@@ -405,6 +405,7 @@ a { color: inherit; text-decoration: none; }
   .brand-grid { grid-template-columns: 1fr; }
   .brand-wordmark { grid-column: span 1; }
   .sheet-row { grid-template-columns: 1fr; gap: 8px; }
+  .sheet-bar { width: 100%; }
   .sheet-hex { justify-self: end; }
   .hero { padding-top: 118px; }
 }
