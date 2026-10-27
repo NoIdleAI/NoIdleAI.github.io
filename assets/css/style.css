@@ -246,7 +246,7 @@ a { color: inherit; text-decoration: none; }
 
 .tile-lock-open { background: #fff; color: #0a0a0a; border-color: #fff; font-weight: 600; }
 .tile-lock-open:hover { opacity: 0.88; }
-.tile-badge-open {
+.tile-lock, .tile-lock-open {
   margin-left: auto;
   font-size: 11.5px;
   padding: 4px 12px;
@@ -255,7 +255,6 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
 }
 .tile-lock { color: var(--text-faint); border: 1px solid var(--hairline); }
-.tile-badge-open { color: #0a0a0a; background: #fff; border: 1px solid #fff; font-weight: 600; }
 
 .tile-tagline { font-size: 17px; font-weight: 600; margin-bottom: 8px; }
 .tile-desc { font-size: 14.5px; color: var(--text-muted); flex-grow: 1; }
